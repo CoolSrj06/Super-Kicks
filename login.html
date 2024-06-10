@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="login.css">
+    <title>Login</title>
+</head>
+<body>
+    <div class="login-container">
+        <h2>Welcome Back!</h2>
+        <form id="login-form" action="/user/login" method="POST">
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" required>
+            </div>
+            <button type="submit">Log In</button>
+        </form>
+        <p>Don't have an account? <a href="signup.html">Sign Up</a></p>
+    </div>
+<!--
+    <script>
+        function validateLogin(event) {
+            event.preventDefault(); // Prevent the form from submitting
+
+            var email = document.getElementById("email").value;
+            var password = document.getElementById("password").value;
+    
+            // Get user data from localStorage
+            var users = JSON.parse(localStorage.getItem("users")) || [];
+    
+            // Check if the user exists
+            var user = users.find(u => u.email === email && u.password === password);
+    
+            if (user) {
+                // Redirect to home.html on successful login
+                window.location.href = "home.html";
+            } else {
+                alert("Invalid email or password. Please try again.");
+            }
+        }
+    </script>
+
+-->
+</body>
+</html>

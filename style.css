@@ -1,0 +1,154 @@
+* {
+    margin: 0px;
+}
+
+.top {
+    border: 2px solid black;
+}
+
+h1 {
+    color: rgb(0, 0, 0);
+    letter-spacing: 2px;
+    font-weight: bolder;
+    font-size: 50px;
+    text-align: center;
+    font-family: monospace;
+    background-color: whitesmoke;
+    position: relative;
+    z-index: 10;
+}
+
+.container {
+    position: relative;
+    width: 100%;
+}
+
+.top {
+    position: relative;
+    z-index: 1;
+
+    height: 100vh;
+}
+
+.top>nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-inline: 10px;
+    flex-wrap: wrap;
+    margin-top: 6px;
+}
+
+.top nav a {
+    color: white;
+    font-size: 20px;
+}
+
+.top>nav>div {
+    display: flex;
+    gap: 30px;
+}
+
+.top>.search-container {
+    margin-top: 5px;
+    text-align: center;
+}
+
+.top>.search-container input[type=text] {
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.top>.search-container button {
+    padding: 8px 15px;
+    border-radius: 5px;
+    border: none;
+    background-color: #333;
+    color: #fff;
+    cursor: pointer;
+}
+
+#bgVideo {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: -1;
+}
+
+.overlay_text {
+    position: absolute;
+    display: block;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 100px;
+    color: rgb(14, 7, 7);
+    background-color: aliceblue;
+    opacity: 40%;
+    text-align: center;
+    font-family: monospace;
+}
+
+.collection {
+    position: relative;
+    background-color: white;
+    z-index: 1;
+}
+
+.collection>.img {
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.collection>.img>a>img {
+    height: 450px;
+    width: 450px;
+}
+
+.collection>.img>a{
+    display: flex;
+    flex-direction: column;
+    gap:5px;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+}
+
+.img a:hover {
+    transform: translateY(2%);
+}
+
+footer {
+    position: relative;
+    z-index: 1;
+    background-color: black;
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    display: flex;
+    justify-content: space-between;
+}
+
+footer>div {
+    padding: 30px;
+}
+
+ul a {
+    text-decoration: none;
+    color: white;
+}
+
+ul li {
+    list-style: none;
+    position: relative;
+    margin: 5px;
+    left: -40px;
+}
